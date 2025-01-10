@@ -135,17 +135,18 @@ def main():
                                     "EXPORT"],
         "Marketing & Communications": ["MARKETING", "COMMUNICATION", "WAS WORKING IN AN ADVERTISEMENT AGENCY"],
         "Research & Development": ["NEUROSCIENCE RESEARCH", "OKUMUYORUM", "UNIVERSITY", "ACADEMICS",
-                                   "FACULTY OF ECONOMICS AND BUSINESS ADMINISTRATION"],
+                                   "FACULTY OF ECONOMICS AND BUSINESS ADMINISTRATION", "R&D"],
         "Human Resources & People Services": ["HUMAN RESOURCES", "HUMAM RESOURCE", "PEOPLE SERVICES"],
         "Engineering & Specialized Roles": ["ENGINEERING", "CYBERSECURITY", "ENERGY TRADE DEPARTMENT",
-                                            "INSTRUMENTATION", "SAP LOGISTICS AND E-INVOICING"],
+                                            "INSTRUMENTATION", "SAP LOGISTICS AND E-INVOICING", "AGRICULTURAL SCIENCES",
+                                            "MEDICINE", "YATIRIM DANIÅMANLIÄI"],
         "Product & Business Analysis": ["PRODUCT AND TECHNOLOGY", "BUSINESS DEVELOPMENT", "CONSULTANT",
                                         "OPERATIONS", "TRANSPORTATION"]
     }
     job_title_groups = {
         "Analytics & Business Intelligence": ["DATA ANALYST AND BUSINESS INTELLIGENCE SPECIALIST", "BI SPECIALIST",
                                               "INTERNAL AUDITOR DATA ANALYTICS", "DATA ANALYST", "BUSINESS ANALYST",
-                                              "IT ANALYST"],
+                                              "IT ANALYST", "PHENOTYPING AND DATA SPECIALIST", "DATA SPECIALIST"],
         "Customer Support & Operations": ["DIRECTOR OF CUSTOMER SUPPORT", "OPERATIONS MANAGER", "DISTRIBUTOR EXECUTIVE",
                                           "SALES SPECIALIST", "RECRUITMENT SPECIALIST", "LOGISTICS COORDINATOR"],
         "Engineering & Technology": ["ENERGY ENGINEER", "CYBERSECURITY CONSULTANT", "TEST ENGINEER",
@@ -159,14 +160,14 @@ def main():
                                        "MARKETING SPECIALIST"],
         "Product & Business Development": ["PRODUCT MANAGER", "BUSINESS DEVELOPMENT", "OPERATIONS ANALYST"],
         "Consultancy & Coaching": ["PROFESSIONAL COACH", "CONSULTANT", "JUNIOR CONSULTANT", "PROFESSIONAL COACH",
-                                   "SENIOR CONSULTANT", "SAP CONSULTANY"],
+                                   "SENIOR CONSULTANT", "SAP CONSULTANY", "KIDEMLI YATIRIM DANIÅMANI"],
         "Research & Academia": ["PHD STUDENT", "RESEARCH ASSISTANT", "SOSYOLOG", "ADJUNCT PROFESSOR", "SENIOR LECTURER",
                                 "PHD", "LECTURER"],
         "Leadership & Executive Roles": ["VICE PRESIDENT", "GLOBAL HEAD OF ENGINEERING", "CEO", "CISO",
                                          "EXECUTIVE BOARD MEMBER", "SALES DIRECTOR", "COUNTRY DIRECTOR", "HOTEL MANAGER",
                                          "GENERAL MANAGER", "FOUNDER", "FILM PRODUCER", "EXPORT MANAGER"],
         "Uncategorized / Specialized Roles": ["YÃœKSEK ADLI BILIÅIM UZMANI", "ART DIRECTOR",  "ADMINISTRATOR",
-                                              "PROGRAM TEAM LEADER", "INSTRUMENTATION TECHNICIAN" ]
+                                              "PROGRAM TEAM LEADER", "INSTRUMENTATION TECHNICIAN", "MEDICAL DOCTOR" ]
     }
 
     # Detect the encoding of the file
