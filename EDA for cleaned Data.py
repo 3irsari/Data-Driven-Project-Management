@@ -4,7 +4,7 @@ import seaborn as sns
 import numpy as np
 
 # Load the dataset
-file_path = 'C:/Users/x/OneDrive - Berlin School of Business and Innovation (BSBI)/Desktop/BSBI/Dissertation/Data-Cleaning/cleaned_survey_data.csv'  # Replace with the correct file path
+file_path = '*/cleaned_survey_data.csv'  # Replace with the correct file path
 data = pd.read_csv(file_path)
 
 # General Dataset Overview
