@@ -4,7 +4,7 @@ import seaborn as sns
 import textwrap
 
 # Load the dataset
-data_path = 'C:/Users/x/OneDrive - Berlin School of Business and Innovation (BSBI)/Desktop/BSBI/Dissertation/Data-Cleaning/transformed_MultipleChoice_survey_responses.csv'
+data_path = '*/transformed_MultipleChoice_survey_responses.csv'
 data = pd.read_csv(data_path)
 
 # Ensure only relevant columns are used
