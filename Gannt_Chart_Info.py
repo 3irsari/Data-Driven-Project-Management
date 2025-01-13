@@ -8,7 +8,7 @@ faker = Faker()
 Faker.seed(42)
 
 # Load existing project data from Excel
-file_path = "C:/Users/x/OneDrive - Berlin School of Business and Innovation (BSBI)/Desktop/BSBI/Dissertation/Data-Cleaning/Generated_Relational_Database.xlsx"
+file_path = "*/Generated_Relational_Database.xlsx"
 projects_df = pd.read_excel(file_path, sheet_name="Projects")
 
 # Define project details (IDs, start dates, and durations)
@@ -71,7 +71,7 @@ if remaining_tasks > 0:
 tasks_df = pd.DataFrame(tasks)
 
 # Save to CSV for Tableau
-output_path = "C:/Users/x/OneDrive - Berlin School of Business and Innovation (BSBI)/Desktop/BSBI/Dissertation/Data-Cleaning/gantt_chart_data.csv"
+output_path = "*/gantt_chart_data.csv"
 tasks_df.to_csv(output_path, index=False)
 
 print("Gantt chart data saved successfully.")
