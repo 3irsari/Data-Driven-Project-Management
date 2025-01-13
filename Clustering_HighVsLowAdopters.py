@@ -5,7 +5,7 @@ from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
 
 # Load the dataset
-file_path = 'C:/Users/x/OneDrive - Berlin School of Business and Innovation (BSBI)/Desktop/BSBI/Dissertation/Data-Cleaning/cleaned_survey_data.csv'
+file_path = '*/cleaned_survey_data.csv'
 data = pd.read_csv(file_path)
 
 # Select relevant features for clustering
@@ -72,7 +72,7 @@ from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
 
 # Load the dataset
-file_path = 'C:/Users/x/OneDrive - Berlin School of Business and Innovation (BSBI)/Desktop/BSBI/Dissertation/Data-Cleaning/cleaned_survey_data.csv'
+file_path = '*/cleaned_survey_data.csv'
 data = pd.read_csv(file_path)
 
 # Select relevant features for clustering
@@ -188,7 +188,7 @@ from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt
 
 # Load the dataset
-file_path = 'C:/Users/x/OneDrive - Berlin School of Business and Innovation (BSBI)/Desktop/BSBI/Dissertation/Data-Cleaning/cleaned_survey_data.csv'
+file_path = '*/cleaned_survey_data.csv'
 data = pd.read_csv(file_path)
 
 # Select relevant features for clustering
