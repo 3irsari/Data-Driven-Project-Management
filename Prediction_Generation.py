@@ -6,7 +6,7 @@ from sklearn.linear_model import LinearRegression, LogisticRegression
 from sklearn.model_selection import train_test_split
 
 # Load existing data from Excel
-file_path = "C:/Users/x/OneDrive - Berlin School of Business and Innovation (BSBI)/Desktop/BSBI/Dissertation/Data-Cleaning/Generated_Relational_Database.xlsx"
+file_path = "*/Generated_Relational_Database.xlsx"
 progress_data = pd.read_excel(file_path, sheet_name="Project Progress Data")
 risk_logs = pd.read_excel(file_path, sheet_name="Risk Issue Logs")
 performance_metrics = pd.read_excel(file_path, sheet_name="Performance Metrics")
@@ -80,7 +80,7 @@ def generate_unsupervised_analytics(progress_data, risk_logs, metrics, output_pa
         combined_data.to_excel(writer, sheet_name='Clustered_Data', index=False)
 
 # Generate unsupervised analytics
-output_path = "C:/Users/x/OneDrive - Berlin School of Business and Innovation (BSBI)/Desktop/BSBI/Dissertation/Data-Cleaning/Clustered_Output.xlsx"
+output_path = "*/Clustered_Output.xlsx"
 generate_unsupervised_analytics(progress_data, risk_logs, performance_metrics, output_path)
 
 print(f"Clustered data saved to {output_path}")
