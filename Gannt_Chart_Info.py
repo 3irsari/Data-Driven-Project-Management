@@ -11,15 +11,11 @@ Faker.seed(42)
 file_path = "C:/Users/x/OneDrive - Berlin School of Business and Innovation (BSBI)/Desktop/BSBI/Dissertation/Data-Cleaning/Generated_Relational_Database.xlsx"
 projects_df = pd.read_excel(file_path, sheet_name="Projects")
 
-# Generate new project names
-projects_df['Project_Name'] = [faker.bs().title() for _ in range(len(projects_df))]
-
 # Define project details (IDs, start dates, and durations)
 projects = []
 for _, row in projects_df.iterrows():
     projects.append({
         "Project ID": row["Project_ID"],
-        "Project Name": row["Project_Name"],
         "Start Date": datetime(2024, 11, 1),  # Example start date, adjust as needed
         "Duration Days": random.randint(120, 180)  # Example duration, adjust as needed
     })
@@ -34,7 +30,6 @@ tasks_per_project = total_tasks_needed // len(projects)
 
 for project in projects:
     project_id = project["Project ID"]
-    project_name = project["Project Name"]
     start_date = project["Start Date"]
     duration = project["Duration Days"]
     task_duration = duration // tasks_per_project
@@ -45,7 +40,6 @@ for project in projects:
         tasks.append({
             "Task ID": f"T{project_id}{i}",
             "Project ID": project_id,
-            "Project Name": project_name,
             "Task Name": random.choice(task_names),  # Choose from predefined task names
             "Task Start Date": task_start_date,
             "Task End Date": task_end_date,  # Allow end date to be later than today
@@ -57,7 +51,6 @@ remaining_tasks = total_tasks_needed - len(tasks)
 if remaining_tasks > 0:
     project = projects[-1]
     project_id = project["Project ID"]
-    project_name = project["Project Name"]
     start_date = project["Start Date"]
     duration = project["Duration Days"]
     task_duration = duration // (tasks_per_project + remaining_tasks)
@@ -68,7 +61,6 @@ if remaining_tasks > 0:
         tasks.append({
             "Task ID": f"T{project_id}{i}",
             "Project ID": project_id,
-            "Project Name": project_name,
             "Task Name": random.choice(task_names),
             "Task Start Date": task_start_date,
             "Task End Date": task_end_date,  # Allow end date to be later than today
