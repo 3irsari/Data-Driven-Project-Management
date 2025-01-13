@@ -88,7 +88,7 @@ def explode_multiple_choice(df, columns_valid_choices):
 
 # ===================== Step 8: Main Execution =====================
 def main():
-    file_path = "C:/Users/x/OneDrive - Berlin School of Business and Innovation (BSBI)/Desktop/BSBI/Dissertation/Data-Cleaning/survey_data.csv"
+    file_path = "*/survey_data.csv"
     aliases = {
         'Timestamp': 'timestamp',
         'Which department are you working in? ': 'department',
@@ -292,14 +292,14 @@ def main():
     expanded_df = explode_multiple_choice(df, columns_valid_choices)
 
     # Save the transformed DataFrame
-    expanded_df.to_csv('C:/Users/x/OneDrive - Berlin School of Business and Innovation (BSBI)/Desktop/BSBI/Dissertation/Data-Cleaning/transformed_MultipleChoice_survey_responses.csv', index=False)
+    expanded_df.to_csv('*/transformed_MultipleChoice_survey_responses.csv', index=False)
     print("Data saved to transformed_MultipleChoice_survey_responses.csv file")
 
     # Display processed data
     pd.set_option('display.max_columns', None)
 
     # Save processed data to a new CSV file
-    df.to_csv("C:/Users/x/OneDrive - Berlin School of Business and Innovation (BSBI)/Desktop/BSBI/Dissertation/Data-Cleaning/cleaned_survey_data.csv", index=False)
+    df.to_csv("*/cleaned_survey_data.csv", index=False)
     print("Data saved to cleaned_survey_data.csv file")
 
 if __name__ == "__main__":
