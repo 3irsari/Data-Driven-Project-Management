@@ -6,7 +6,7 @@ from sklearn.metrics import silhouette_score, davies_bouldin_score, calinski_har
 from sklearn.decomposition import PCA
 
 # Load and preprocess the dataset
-file_path = 'C:/Users/x/OneDrive - Berlin School of Business and Innovation (BSBI)/Desktop/BSBI/Dissertation/Data-Cleaning/cleaned_survey_data.csv'
+file_path = '*/cleaned_survey_data.csv'
 data = pd.read_csv(file_path)
 features = ['confidence_influence', 'ai_confidence_increase']
 X = data[features].dropna()
