@@ -25,3 +25,16 @@ Prediction_Generation.py
 
 Constructed Dashboard:
   Data Preparetion: ProjectManagement.tfl
+  Prepared Dashboard: ProjectManagement.twb
+  Peer-Review EDA: Qualitative Interviews.twb
+
+Graphs Designed on Python:
+  Prediction_Generation.py
+  Proactive vs Reactive.py
+  ML to PM.py
+  MindMap.py
+
+Hypothesis check: 
+  Hypothesis_check.py
+
+
